@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foodSection {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/*---------NavBar---------*/
+
+.nav-item {
+  margin: 5px;
+}
+
+.nav-link {
+  border-bottom: 2px solid transparent;
+  color: black;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid blue;
+  transition: 1s;
+}
+
+#navbar {
+  border-bottom: 2px solid rgb(149, 149, 149);
+}
+
+/*---------Login Container---------*/
+
+#formContainer {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  width: 24%;
+  background-color: white;
+  padding: 50px;
+  border-radius: 20px;
+  margin-top: 150px;
+  border: 1px solid;
+}
+
+#formContainer .btn-primary {
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+}
+
+.form-control {
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: rgba(0, 0, 0, 0.42);
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 4px 4px 0 0;
+}
+
+#formContainer h4 {
+  font-size: 2rem !important;
+  font-weight: 700;
+}
+
+.form-label {
+  font-family: 800 !important;
+}
+
+/*---------Add Food Container---------*/
+
+.addFoodContainer {
+  width: 50%;
+  background-color: rgb(30, 36, 32);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid;
+}
+
+.addFoodContainer input,
+select {
+  height: 4vh;
+  border-radius: 32px;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #formContainer {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 75%;
+  }
+
+  .addFoodContainer {
+    width: 100%;
+  }
+
+  #tableForFood {
+    font-size: 13px;
+  }
+}
